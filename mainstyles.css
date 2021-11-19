@@ -1,0 +1,37 @@
+.button_container{
+    float: right;
+    position: static; /*static, relative, absolute, fixed, sticky */
+    /*box-sizing: border-box (makes height and width the total height and stuff*/
+    padding-right: 20px;
+}
+.button_container a {
+    float: left;
+    color: blue;
+    text-align: center;
+    padding: 12px;
+    margin: 12px;
+    text-decoration: none;
+    font-size: 30px;
+    line-height: 25px;
+    border-radius: 4px;
+  }
+.button_container a:hover{
+    color:#059ce8;
+    background: none;
+
+}
+.title{
+    text-align: left;
+    font-family:'Courier New', Courier, monospace;
+    margin-left: 12px;
+}
+.header{
+    margin: none;
+    width: auto;
+    fill: darkseagreen;
+    background-color: darkseagreen;
+    padding: 10px;
+    display: flex;
+    align-content: flex-start;
+    justify-content: space-between;
+}
