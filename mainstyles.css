@@ -1,11 +1,17 @@
-.defaultbackground{
+.defaultbackgroundpurple{
     background:plum;
     padding-top: 5px;
     padding-bottom: 5px;
     margin:auto;
 }
-.defaultbackground2{
+.defaultbackgroundpink{
     background:lightpink;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin:auto;
+}
+.defaultbackgroundblue{
+    background:lightcyan;
     padding-top: 5px;
     padding-bottom: 5px;
     margin:auto;
@@ -71,4 +77,44 @@
     padding: 15px;
     font-size: 15px;
     font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+.holder{
+    margin: none;
+    width: fill;
+    display: flex;
+    align-content:flex-start;
+}
+
+
+.lessondiv{
+    border: 5px solid teal;
+}
+.lesson_container{
+    margin: none;
+    width: fill;
+    fill: black;
+    padding: none;
+}
+.lesson_container a{
+    text-align: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    float: left;
+    color: blue;
+    padding: 12px;
+    margin: 12px;
+    text-decoration: none;
+    line-height: 25px;
+    border-radius: 4px;
+}
+.lessonbox{
+    width:400px;
+    padding: 70px 0;
+    height:auto;
+    outline:lightskyblue;
+    text-align:center;
+    font-size:50px;
+    border: 5px dotted teal;
+
 }
