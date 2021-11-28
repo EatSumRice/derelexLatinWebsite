@@ -125,6 +125,7 @@
 .informationbox p{
     border-top: 3px solid seagreen;
     text-align: left;
+    margin-top: 11px;
 }
 .holder{
     margin: none;
@@ -200,6 +201,9 @@ a + a{
 }
 .compinformationcontainer p{
     margin-top:20px;
-    margin-bottom:30px;
+    margin-bottom:23px;
     border-bottom: 2px solid black;
+}
+.compcentered {
+    text-indent: 390px;
 }
