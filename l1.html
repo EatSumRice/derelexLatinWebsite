@@ -5,6 +5,7 @@
   <link rel="stylesheet" href="mainstyles.css">
   <title>Beginner's Latin Website!</title>
 </head>
+
 <body>
     <div class = "header">
         <div class = "title"><h1>Derelex Latin Site</h1></div>
@@ -13,54 +14,64 @@
           <a class = "button" href = "l2.html">Next Lesson</a>
         </div>
     </div>
+
     <div id="lesson1" class="lessondiv">
+        <div class="lesson">
         <div class = "defaultbackgroundpurple">
-            <h1>Lesson 1: Nouns, Adjectives, and Verbs</h1>
+            <h1 class="lesson">Lesson 1: Nouns, Adjectives, and Verbs</h1>
         </div>
         <div class = "defaultbackgroundpink">
-            <p>In order to succeed in Latin, it is important to have a strong foundation in English grammar. 
+            <p class="lesson">In order to succeed in Latin, it is important to have a strong foundation in English grammar. 
                 This lesson will go over the three most basic parts of speech: Nouns, Adjectives, and Verbs. 
                 <br>If you are already familiar with these constructs, then feel free to move onto lesson 2.</p>
             
-            <h4>Nouns</h4>
-            <p>Nouns can be usually generalized as people, places, things, or ideas. 
+            <h4 class="lesson">Nouns</h4>
+            <p class="lesson">Nouns can be usually generalized as people, places, things, or ideas. 
                 Two ways that nouns are often used are as subjects and direct objects. 
                 Subjects are nouns that are doing an action, and direct objects are nouns that are being acted upon.
                 <br>Examples: Julius Caesar, Rome, Toga, Happiness</p>
             
-            <h4>Adjectives</h4>
-            <p>Adjectives are words that describe a noun.<br>Examples: Happy, Sad, Gloomy, Smart</p>
+            <h4 class="lesson">Adjectives</h4>
+            <p class="lesson">Adjectives are words that describe a noun.<br>Examples: Happy, Sad, Gloomy, Smart</p>
             
-            <h4>Verbs</h4>
-            <p>Verbs are words that are used to describe actions.<br>Examples: Run, Sit, Read, Write</p>
+            <h4 class="lesson">Verbs</h4>
+            <p class="lesson">Verbs are words that are used to describe actions.<br>Examples: Run, Sit, Read, Write</p>
             
-            <h4>Practice</h4>
-                <div id="l1practice">
-                    <p>Take the following sentece: <br>Charlie pets the happy dog.</p>
+            <h4 class="lesson">Practice</h4>
+                <div id="practice">
+                    <p class="lesson">Take the following sentece: <br>Charlie pets the happy dog.</p>
                     <script type="text/javascript" src="activities.js"></script>
                     <script type="text/javascript">
                         MYLIBRARY.init(["Click on the subject in the sentence.", 0, 5, "Charlie ", "subject", "pets ", "verb", "the ", "", "happy ", "adjective", "dog.", "direct object"]);
                         MYLIBRARY.interactiveText();
                     </script>
-                    <p id="Click on the subject in the sentence.">&nbsp;</p>
+                    <p id="Click on the subject in the sentence." class="lesson">&nbsp;</p>
                     <script type="text/javascript">
                         MYLIBRARY.init(["Click on the direct object in the sentence.", 4, 5, "Charlie ", "subject", "pets ", "verb", "the ", "", "happy ", "adjective", "dog.", "direct object"]);
                         MYLIBRARY.interactiveText();
                     </script>
-                    <p id="Click on the direct object in the sentence.">&nbsp;</p>
+                    <p id="Click on the direct object in the sentence." class="lesson">&nbsp;</p>
                     <script type="text/javascript">
                         MYLIBRARY.init(["Click on the adjective in the sentence.", 3, 5, "Charlie ", "subject", "pets ", "verb", "the ", "", "happy ", "adjective", "dog.", "direct object"]);
                         MYLIBRARY.interactiveText();
                     </script>
-                    <p id="Click on the adjective in the sentence.">&nbsp;</p>
+                    <p id="Click on the adjective in the sentence." class="lesson">&nbsp;</p>
                     <script type="text/javascript">
                         MYLIBRARY.init(["Click on the verb in the sentence.", 1, 5, "Charlie ", "subject", "pets ", "verb", "the ", "", "happy ", "adjective", "dog.", "direct object"]);
                         MYLIBRARY.interactiveText();
                     </script>
-                    <p id="Click on the verb in the sentence.">&nbsp;</p>
+                    <p id="Click on the verb in the sentence." class="lesson">&nbsp;</p>
                 </div>
-            </p>
-            <h4>Answers and Explanations (Click to reveal)</h4>
+
+            <div id="answers">
+                <button id="answer-button" class="answer"><b>Answers and Explanations (Click to reveal)</b></button>
+                <script type="text/javascript" src="activities.js"></script>
+                <script type="text/javascript">
+                    MYLIBRARY.init(["The easiest way to break apart this sentence is by identifying the verb first. This is also good form for translating Latin. In this sentence, the word that is describing the action is 'pets', so it is the verb. The noun doing the petting is the subject, and the noun being petted is the direct object, so 'Charlie' and 'dog' are the subject and direct object respectively. Finally, the adjective is 'happy', because it is describing the dog. An important note to make here is that 'the' is an article which is not translated into Latin. Instead articles (a, an, or the) are put on as needed to any nouns in Latin when translating to English."]);
+                    MYLIBRARY.answers();
+                </script>
+                <p id="answer-text" class="lesson"></p>
+            </div>
         </div>
     </div>
 </body>

@@ -5,9 +5,10 @@ var MYLIBRARY = MYLIBRARY || (function(){
         init : function(Args) {
             _args = Args;
         },
+
         interactiveText : async function() { //(question, answer (in the form of position in sentence, ranges from 0 to n-1), # of options, potential answer, potential question combo repeated # of options times)
-            document.write(_args[0]+"<br>");
-            var div=document.getElementById("l1practice");
+            document.write('<p class="lesson">'+_args[0]+"<br></p>");
+            var div=document.getElementById("practice");
             var num = _args[2]*2;
             var n = _args[1];
             const question=_args[0];
@@ -17,6 +18,9 @@ var MYLIBRARY = MYLIBRARY || (function(){
                     myButton.style.backgroundColor="lightblue";
                     myButton.innerHTML= _args[i];
                     myButton.id="myButton"+(i-3).toString()+question;
+                    if(i==3){
+                        myButton.style.marginLeft="15px";
+                    }
                     myButton.addEventListener('click',function(){
                         if((i-3)/2==n){
                             document.getElementById("myButton"+(i-3).toString()+question).style.backgroundColor="green";
@@ -37,6 +41,19 @@ var MYLIBRARY = MYLIBRARY || (function(){
                 }
             }
             document.write("<br>");
+        },
+
+        answers : async function(){ //(answer text)
+            const div=document.getElementById("answers");
+            const myButton=document.getElementById("answer-button");
+            myButton.addEventListener('click',function(){
+                if(document.getElementById("answer-text").innerHTML==_args[0]){
+                    document.getElementById("answer-text").innerHTML="";
+                }
+                else{
+                    document.getElementById("answer-text").innerHTML=_args[0];
+                }
+            });
         }
     };
 }());

@@ -137,7 +137,6 @@
 
 .lessondiv{
     border: 5px solid teal;
-    border-bottom: none;
 }
 .lesson_container{
     margin: none;
@@ -206,4 +205,20 @@ a + a{
 }
 .compcentered {
     text-indent: 390px;
+}
+button.answer{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    background: none;
+    border: none;
+    margin-left: 10px;
+}
+p.lesson{
+    margin-left: 15px;
+}
+h1.lesson{
+    margin-left: 15px;
+}
+h4.lesson{
+    margin-left: 15px;
 }
